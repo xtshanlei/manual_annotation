@@ -11,4 +11,5 @@ import time
 with st.empty():
     for i in range(200):
         st.write(i)
-        time.sleep(1)
+        st.write(df.raw_reviews[i])
+        time.sleep(5)
