@@ -12,5 +12,9 @@ with st.empty():
     for i in range(200):
         st.write(i)
         st.write(df.raw_reviews[i])
+        time.sleep(5)
+with st.empty():
+    for i in range(200):
+        st.write(i)
         st.write(df.processed_reviews[i])
         time.sleep(5)
