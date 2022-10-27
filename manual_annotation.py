@@ -13,5 +13,8 @@ with st.empty():
         st.header('Processed reviews')
         st.write(df.processed_reviews[i])
         st.header('Is the processed reviews what we want?')
-        answer = st.radio('Is the processed reviews what we want?',('YES','NO'))
+        if st.radio('Is the processed reviews what we want?',('YES','NO')) == 'YES':
+            answer = 1
+        else:
+            answer = 0
         st.write(answer)
