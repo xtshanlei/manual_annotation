@@ -11,5 +11,5 @@ with st.empty():
     for i in range(200):
         st.write(df.raw_reviews[i])
         st.write(df.processed_reviews[i])
-        time.sleep(1)
-    st.write('end')
+        time.sleep(60)
+    
