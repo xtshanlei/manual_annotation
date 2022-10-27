@@ -15,5 +15,5 @@ with st.empty():
         container_1.write(df.raw_reviews[i])
         container_2.write('Processed reviews')
         container_2.write(df.processed_reviews[i])
-        answer = st.radio('Is the computer doing a good job?',('Yes','No'))
+        answer = st.radio('Is the computer doing a good job?',('Yes','No'),key = i)
         st.write(answer)
