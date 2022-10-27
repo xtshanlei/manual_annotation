@@ -7,8 +7,8 @@ st.write('by Yulei')
 df = pd.read_csv('data2compare.csv')
 
 import time
+
 with st.empty():
     for i in range(200):
-        st.write(i)
-        st.write('raw')
-        time.sleep(10)
+        st.write(f"⏳ {seconds} seconds have passed")
+        time.sleep(1)
