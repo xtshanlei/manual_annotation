@@ -8,5 +8,5 @@ df = pd.read_csv('data2compare.csv')
 st.write(df)
 
 for i in len(df):
-    st.write(record.raw_reviews[i])
+    st.write(df.raw_reviews[i])
     break
