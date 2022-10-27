@@ -9,4 +9,5 @@ import time
 placeholder = st.empty()
 for i in range(200):
     placeholder.write(df.raw_reviews[i])
+    placeholder.write(df.processed_reviews[i])
     time.sleep(5)
