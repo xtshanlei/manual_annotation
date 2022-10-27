@@ -9,11 +9,11 @@ i=0
 while i <=200:
     st.write(df.raw_reviews[i])
     st.write(df.processed_reviews[i])
-    if st.button('YES'):
+    if st.button('YES'，key=i):
         answer = 1
-    elif st.button('NO'):
+    elif st.button('NO',key =i):
         answer = 0
 
     if st.button('YES') or st.button('NO'):
-        if st.button('Next'):
+        if st.button('Next',key =i):
             i +=1
