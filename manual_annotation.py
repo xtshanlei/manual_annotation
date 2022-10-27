@@ -17,6 +17,7 @@ for i in range(200):
         elif st.button('NO'):
             answer = 0
         st.write(answer)
+        placeholder.empty()
 
 # Clear all those elements:
 #placeholder.empty()
