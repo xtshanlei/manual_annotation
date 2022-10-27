@@ -6,3 +6,7 @@ st.write('by Yulei')
 
 df = pd.read_csv('data2compare.csv')
 st.write(df)
+
+for record in df:
+    st.write(record.raw_reviews)
+    break
