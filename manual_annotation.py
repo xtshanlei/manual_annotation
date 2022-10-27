@@ -5,9 +5,11 @@ st.title('Mannual Annotation Tool')
 st.write('by Yulei')
 
 df = pd.read_csv('data2compare.csv')
-st.write(df)
-st.write(len(df))
+
 for i in range(200):
-    st.write(i)
     st.write(df.raw_reviews[i])
-    break
+    if st.button('YES'):
+        answer = 1
+    elif:st.button('NO'):
+        answer = 0
+    st.write(answer)
