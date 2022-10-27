@@ -7,8 +7,8 @@ st.write('by Yulei')
 df = pd.read_csv('data2compare.csv')
 i=0
 while i <=200:
-    st.write(df.raw_review[i])
-    st.write(df.processed_review[i])
+    st.write(df.raw_reviews[i])
+    st.write(df.processed_reviews[i])
     if st.button('YES'):
         answer = 1
     elif st.button('NO'):
