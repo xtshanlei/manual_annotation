@@ -12,7 +12,11 @@ for i in range(200):
     with placeholder.container():
         st.write(df.raw_reviews[i])
         st.write(df.processed_reviews[i])
-        time.sleep(2)
+        if st.button('YES'):
+            answer = 1
+        elif st.button('NO'):
+            answer = 0
+        st.write(answer)
 
 # Clear all those elements:
-placeholder.empty()
+#placeholder.empty()
