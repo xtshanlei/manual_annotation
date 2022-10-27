@@ -12,6 +12,7 @@ with st.empty():
         st.write(df.raw_reviews[i])
         st.header('Processed reviews')
         st.write(df.processed_reviews[i])
+    st.write('end')
 
 import time
 
