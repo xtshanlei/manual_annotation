@@ -5,9 +5,8 @@ st.title('Mannual Annotation Tool')
 st.write('by Yulei')
 
 df = pd.read_csv('data2compare.csv')
-
-
+import time
+placeholder = st.empty()
 for i in range(200):
-    st.write(df.raw_reviews[i])
-    answer = st.radio('asdf',('Y','N'),key =i)
-    st.write(answer)
+    placeholder.write(df.raw_reviews[i])
+    time.sleep(5)
