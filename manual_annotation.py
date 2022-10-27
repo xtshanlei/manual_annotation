@@ -6,15 +6,18 @@ st.write('by Yulei')
 
 df = pd.read_csv('data2compare.csv')
 
-import time
+placeholder = st.empty()
 
-with st.empty():
-    for i in range(200):
-        st.write(i)
-        st.write(df.raw_reviews[i])
-        time.sleep(5)
-with st.empty():
-    for i in range(200):
-        st.write(i)
-        st.write(df.processed_reviews[i])
-        time.sleep(5)
+# Replace the placeholder with some text:
+placeholder.text("Hello")
+
+# Replace the text with a chart:
+placeholder.line_chart({"data": [1, 5, 2, 6]})
+
+# Replace the chart with several elements:
+with placeholder.container():
+    st.write("This is one element")
+    st.write("This is another")
+
+# Clear all those elements:
+placeholder.empty()
