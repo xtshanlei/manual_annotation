@@ -10,5 +10,5 @@ import time
 
 with st.empty():
     for i in range(200):
-        st.write(f"⏳ {i} seconds have passed")
+        st.write(i)
         time.sleep(1)
