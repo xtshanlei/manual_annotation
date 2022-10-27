@@ -17,3 +17,4 @@ with st.empty():
         container_2.write(df.processed_reviews[i])
         answer = st.radio('Is the computer doing a good job?',('Yes','No'),key = i)
         st.write(answer)
+        time.sleep(5)
