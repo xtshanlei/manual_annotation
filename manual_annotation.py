@@ -6,18 +6,12 @@ st.write('by Yulei')
 
 df = pd.read_csv('data2compare.csv')
 
-placeholder = st.empty()
+container_1 = st.container()
+container_2 = st.container()
 import time
 for i in range(200):
-    with placeholder.container():
-        st.write(df.raw_reviews[i])
-        st.write(df.processed_reviews[i])
-        if st.button('YES'):
-            answer = 1
-        elif st.button('NO'):
-            answer = 0
-        st.write(answer)
-        placeholder.empty()
-
-# Clear all those elements:
-#placeholder.empty()
+    container_1.write('Raw reviews:')
+    container_1.write(df.raw_reviews[i])
+    container_2.write('Processed reviews')
+    container_2.write(df.processed_reviews[i])
+    time.sleep(2)
