@@ -9,8 +9,6 @@ df = pd.read_csv('data2compare.csv')
 import time
 with st.empty():
     for i in range(200):
+        st.write(i)
         st.write('raw')
-        st.write(df.raw_reviews[i])
-        st.write('procssed')
-        st.write(df.processed_reviews[i])
         time.sleep(10)
