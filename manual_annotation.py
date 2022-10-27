@@ -13,4 +13,5 @@ for i in range(200):
     with placeholder.container():
         container1.write(df.raw_reviews[i])
         container2.write(df.processed_reviews[i])
+    time.sleep(2)
     placeholder.empty()
